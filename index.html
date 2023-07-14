@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/scrollbar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>X-Men</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="./src/images/logo.svg" alt="X-Men logo" />
+    </header>
+
+    <main class="character-selection">
+      <section class="characters">
+        <h1 class="title">Select a character</h1>
+        <ul class="character-list">
+          <li
+            class="character selected"
+            id="cyclops"
+            data-name="Cyclops"
+            data-description="Cyclops, also known as Scott Summers, possesses the mutant ability to emit powerful beams of concussive force from his eyes. Due to a physiological anomaly, Cyclops' optic blasts are unleashed as a result of his eyes' inability to contain and control the energy. He must constantly wear a special visor or use ruby quartz lenses to regulate his power. Cyclops' optic blasts can be focused into precise, destructive beams, or unleashed in broad, devastating bursts."
+          >
+            <img src="./src/images/card-cyclops.jpg" alt="character Cyclops" />
+          </li>
+
+          <li
+            class="character"
+            id="jean-grey"
+            data-name="Jean Grey"
+            data-description="Jean Grey is a mutant telepath with exceptional telekinetic abilities. As one of the most powerful mutants in the X-Men universe, Jean possesses the potential to tap into the vast powers of the cosmic entity known as the Phoenix Force. Her telepathy enables her to read minds, communicate telepathically, and even manipulate the thoughts and memories of others. Additionally, her telekinesis allows her to move objects with her mind and create powerful force fields for protection."
+          >
+            <img
+              src="./src/images/card-jean-grey.jpg"
+              alt="Character: Jean Grey"
+            />
+          </li>
+
+          <li
+            class="character"
+            id="kitty"
+            data-name="Shadowcat"
+            data-description="Kitty Pryde, also called Shadowcat, possesses the unique ability of phasing through solid objects. This intangibility power allows her to pass through walls, floors, and even people, making her an excellent infiltrator and spy. Kitty can also extend her phasing ability to other people or objects, allowing them to pass through solid matter while in physical contact with her. This power grants her great versatility in combat and makes her difficult to capture or harm."
+          >
+            <img src="./src/images/card-kitty.jpg" alt="Character: Shadowcat" />
+          </li>
+
+          <li
+            class="character"
+            id="storm"
+            data-name="Storm"
+            data-description="Storm, whose real name is Ororo Munroe, is a mutant with the power to control and manipulate the weather. As an omega-level mutant, Storm can summon and manipulate natural phenomena, including rain, lightning, wind, and even create localized storms or tornadoes. She can also fly by using wind currents. Storm's weather control abilities allow her to exert precise control over the elements, making her a formidable force in battle and an invaluable asset in various situations, from creating barriers to altering the environment."
+          >
+            <img src="./src/images/card-storm.jpg" alt="Character: Storm" />
+          </li>
+
+          <li
+            class="character"
+            id="rogue"
+            data-name="Rogue"
+            data-description="Rogue, whose real name is Anna Marie, possesses the power of absorption and power mimicry. When she makes skin-to-skin contact with another individual, Rogue absorbs their memories, skills, and powers while temporarily incapacitating them. However, if Rogue holds on for too long, she risks permanently absorbing the person's essence or even causing their death. Rogue's ability to absorb powers makes her an incredibly versatile member of the X-Men, allowing her to utilize a wide array of abilities from different mutants, making her a force to be reckoned with in combat."
+          >
+            <img src="./src/images/card-rogue.jpg" alt="Character: Rogue" />
+          </li>
+
+          <li
+            class="character"
+            id="wolverine"
+            data-name="Wolverine"
+            data-description="Wolverine, also known as Logan, possesses a mutant power that grants him accelerated healing abilities and adamantium-laced bone claws. His healing factor allows him to regenerate from almost any injury, including wounds and broken bones, at an incredibly rapid rate. The adamantium coating on his bones makes his claws virtually indestructible and provides him with lethal weapons in combat. Wolverine's heightened senses and animal-like instincts further enhance his combat skills, making him an exceptional fighter and tracker."
+          >
+            <img
+              src="./src/images/card-wolverine.jpg"
+              alt="Character: Wolverine"
+            />
+          </li>
+
+          <li
+            class="character"
+            id="nightcrawler"
+            data-name="Nightcrawler"
+            data-description="Nightcrawler, born Kurt Wagner, is a mutant with the power of teleportation. He can instantaneously transport himself from one location to another by disappearing in a puff of brimstone-scented smoke and reappearing elsewhere. Nightcrawler's teleportation ability is limited to places he has been or can see, and he must have a clear line of sight to his destination. His agility and acrobatic skills make him a proficient combatant, and he can also blend into shadows due to his blue skin and prehensile tail, allowing him to move undetected."
+          >
+            <img
+              src="./src/images/card-nightcrawler.jpg"
+              alt="Character: Nightcrawler"
+            />
+          </li>
+
+          <li
+            class="character"
+            id="magneto"
+            data-name=" Magneto"
+            data-description="Magneto, whose real name is Erik Lehnsherr, is a mutant with the power of magnetism manipulation. He can generate and control magnetic fields, giving him control over metal objects. Magneto can move, manipulate, and reshape metal at will, and he can even generate electromagnetic force fields for protection. His powers extend to electromagnetic energy, allowing him to create electromagnetic pulses and disrupt electronic systems. Magneto's control over magnetism makes him an extremely formidable adversary, as he can turn surrounding metal objects into deadly weapons and shields, and he is also capable of flight by manipulating magnetic fields."
+          >
+            <img src="/src/images/card-magneto.jpg" alt="Character: Magneto" />
+          </li>
+        </ul>
+      </section>
+
+      <section class="selected-character">
+        <img
+          class="character-png"
+          src="./src/images/card-cyclops.png"
+          alt="Selected Character"
+        />
+
+        <div class="character-info">
+          <h2 class="character-name" id="character-name">Cyclops</h2>
+          <p class="character-description" id="character-description">
+            Cyclops, also known as Scott Summers, possesses the mutant ability
+            to emit powerful beams of concussive force from his eyes. Due to a
+            physiological anomaly, Cyclops' optic blasts are unleashed as a
+            result of his eyes' inability to contain and control the energy. He
+            must constantly wear a special visor or use ruby quartz lenses to
+            regulate his power. Cyclops' optic blasts can be focused into
+            precise, destructive beams, or unleashed in broad, devastating
+            bursts.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
